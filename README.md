@@ -1,4 +1,4 @@
-# Installation#  
+# Installation  
 Pour lancer l'application effectuer un **npm install** avant de commencer pour installer tous les modules nécessaire.  
 
 **Lancement**  
