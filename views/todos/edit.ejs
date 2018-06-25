@@ -1,0 +1,26 @@
+<% extend('../layout') %>
+
+<main>
+
+    <h1><%= title %></h1>
+
+    <div class="form-wrapper row">
+        <div class="col-md-5">
+
+                <form method="POST" action=<%= action %>>
+
+                    <input type="hidden" name="userId" value="<%= locals.connectedUser.rowid %>"/>
+
+                    <div class="form-group">
+                        <label for="InputMessage">Message</label>
+                        <input name="message" type="text" class="form-control"
+                               id="InputMessage" placeholder="Enter message"
+                               value="<%= todo.message %>">
+                    </div>
+
+                    <button id="btnUpdateTodo" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+    </div>
+
+</main>
